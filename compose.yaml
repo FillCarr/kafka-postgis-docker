@@ -1,0 +1,16 @@
+# Kafka (run separately — not managed by compose):
+# docker run -d --name=kafka -p 9092:9092 apache/kafka
+# https://docs.docker.com/guides/kafka/
+
+services:
+  postgis:
+    image: postgis/postgis
+    restart: always
+    environment:
+     - POSTGRES_DB=gis
+     - POSTGRES_USER=gis
+     - POSTGRES_PASSWORD=password
+    ports:
+     - 5433:5432
+    volumes:
+     - ./data/postgis:/var/lib/postgresql/data

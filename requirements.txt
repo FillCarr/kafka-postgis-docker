@@ -1,0 +1,6 @@
+# Python 3.11
+kafka-python
+tkintermapview
+matplotlib
+numpy
+psycopg

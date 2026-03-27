@@ -7,7 +7,7 @@ import json
 # serialized json needed for kafka consumer
 producer = KafkaProducer(value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 for i in range(1,10):
-    reader = csv.DictReader(open(f'Project1/PVS {i}/dataset_gps.csv'))
+    reader = csv.DictReader(open(f'PVS {i}/dataset_gps.csv'))
     for row in reader:
         producer.send(f'SensorData', row)
 producer.flush()
