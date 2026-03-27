@@ -1,9 +1,8 @@
-<img width="1917" height="985" alt="image" src="https://github.com/user-attachments/assets/5121d339-0543-47d1-8f6b-c17fd06487cc" />
 # GPS Sensor Streaming Dashboard
 
 A real-time data pipeline and GUI dashboard built on [comma.ai's public dataset](https://github.com/commaai/comma2k19) as a exercise in data processing and visualisation. Ingests GPS sensor data via Apache Kafka, persists it to a PostGIS database, and visualises it live using Python/Tkinter.
 
-![Dashboard screenshot](screenshot.png)
+<img width="1917" height="985" alt="image" src="https://github.com/user-attachments/assets/5121d339-0543-47d1-8f6b-c17fd06487cc" />
 
 ## Architecture
 ```
